@@ -4,5 +4,6 @@
 
 import math
 numQuebrado = float(input('Escreva um numero real: '))
-numInteiro = math.trunc(numQuebrado)
-print(f'O numero {numQuebrado} tem a parte inteira {numInteiro}')
+# numInteiro = math.trunc(numQuebrado)
+# ou: numInteiro = int(numQuebrado)
+print(f'O numero {numQuebrado} tem a parte inteira {math.trunc(numQuebrado)}')

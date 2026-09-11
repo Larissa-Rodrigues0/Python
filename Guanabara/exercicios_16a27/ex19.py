@@ -1,6 +1,7 @@
 # Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome escolhido.
 
-import math, time, sys, random
+from time import sleep
+from random import choice
 
 alunos = []
 
@@ -13,7 +14,7 @@ for aluno in alunos:
     print(aluno)
 
 print('\nEscolhendo um aluno...')
-time.sleep(2)
+sleep(2)
 
-sorteado = random.choice(alunos)
+sorteado = choice(alunos)
 print(f'O sorteado foi: {sorteado}')
