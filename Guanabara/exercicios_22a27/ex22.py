@@ -11,6 +11,7 @@ nome = input("Digite seu nome completo: ")
 print(nome.lower())
 print(nome.upper())
 print(len(nome.replace(" ", "")))
+# ou: print(len(nome) - nome.count(' '))
 print(len(nome.split()[0]))
 
 

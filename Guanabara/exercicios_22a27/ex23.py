@@ -10,7 +10,11 @@ milhar: 1
 """
 
 num = input('Escreva um numero de 0 a 9999: ')
-print(f'Milhar: {num[:1]}')
-print(f'Centena: {num[1:2]}')
-print(f'Dezena {num[2:3]}')
-print(f'Unidade: {num[3:4]}')
+u = num // 1 % 10
+d = num // 10 % 10
+c = num // 100 % 10
+m = num // 1000 % 10
+print(f'Milhar: {m}')
+print(f'Centena: {c}')
+print(f'Dezena {d}')
+print(f'Unidade: {u}')
